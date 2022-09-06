@@ -11,8 +11,15 @@ function App() {
 
   return (
     <div>
-      <button>Click Me</button>
-      <input type="text" placeholder="Type away..." />
+      <button onClick={() => setCount((count) => count = 1)}>
+        I've been clicked {count} times
+      </button>
+      <input 
+      type="text"
+      placeholder="type away..."
+      value={text}
+      onChange={(e) => setText(e.target.value)}
+      />
     </div>
   )
 
