@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react"
 
 function App() {
+  const [count, setCount] = useState(0);
+  const [text, setText] = useState("");
   useEffect(() => {
     console.log("useEffect called");
   });
